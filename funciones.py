@@ -34,15 +34,69 @@ def crear_tablero(dimensiones_tablero):
 
 #para colocar barcos de forma manual y no aleatoria
 def posicionar_barcos_fijos(tablero):
-    tablero[3][3] = 'B'
-    tablero[4][3] = 'B'
-    tablero[5][3] = 'B'
-    tablero[6][3] = 'B'
+    tablero[0][0] = 'B'
+    tablero[0][1] = 'B'
 
-    tablero[1][0] = 'B'
-    tablero[1][1] = 'B'
-    tablero[1][2] = 'B'
     tablero[1][3] = 'B'
+
+    tablero[0][5] = 'B'
+
+    tablero[1][7] = 'B'
+    tablero[1][8] = 'B'
+
+    tablero[3][1] = 'B'
+    
+    
+    tablero[3][4] = 'B'
+    tablero[3][5] = 'B'
+    tablero[3][6] = 'B'
+    tablero[3][7] = 'B'
+
+    tablero[4][9] = 'B'
+    tablero[5][9] = 'B'
+    tablero[6][9] = 'B'
+
+    tablero[7][2] = 'B'
+    tablero[7][3] = 'B'
+
+    tablero[7][5] = 'B'
+
+    tablero[9][4] = 'B'
+    tablero[9][5] = 'B'
+    tablero[9][6] = 'B'
+
+#colocación manual de barcos para el tablero sobre el que dispara la máquina
+
+def posicionar_barcos_player(tablero):
+    tablero[0][0]= 'B'
+    
+    tablero[2][0]= 'B'
+    
+    tablero[4][0]= 'B'
+    tablero[5][0]= 'B'
+    tablero[6][0]= 'B'
+    tablero[7][0]= 'B'
+
+    tablero[0][2]= 'B'
+    tablero[1][2]= 'B'
+
+    tablero[4][3]= 'B'
+
+    tablero[6][3]= 'B'
+    tablero[7][3]= 'B'
+    tablero[8][3]= 'B'
+
+    tablero[3][5]= 'B'
+    tablero[3][6]= 'B'
+
+    tablero[1][7]='B'
+    tablero[1][8]='B'
+    tablero[1][9]='B'
+
+    tablero[5][7]='B'
+    tablero[5][8]='B'
+
+    tablero[8][7]='B'
 
 
 #def posicionar_barcos_enemigos(tablero):
@@ -199,14 +253,8 @@ def turno_maquina(tablero):
 
 
 
-
-
-
-
-
-
-
-
+    
+    
 
 
 

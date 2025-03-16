@@ -22,9 +22,12 @@ tablero_para_apuntar = crear_tablero(dimensiones_tablero)
 #pprint.pprint(tablero)
 posicionar_barcos_fijos(tablero)
 
+posicionar_barcos_player(tablero_player)
 
-print("Tablero computer con barcos fijos. Te doy 5 segundos para que los memorices...")
-visualizar(tablero)
+#deshacer los dos siguientes comentarios para ver el tablero con los barcos enemigos
+#print("Tablero computer con barcos fijos. Te doy 5 segundos para que los memorices...")
+#visualizar(tablero)
+#visualizar(tablero_player)
 time.sleep(2)
 #os.system("cls")
 print()
@@ -45,12 +48,16 @@ while continuar==True:
     
     continuar=turno_maquina(tablero_player)
 
- #hay que testear si la máquina puede ganar, r
-#además hay que hacer lo de los barcos aleatorios
 
-#secundario: 
-#tablero bonito con tabulate
-# colores        
+ 
+#cosas que podrían haberse hecho mejor si hubiera dispuesto de tiempo:
+#1. posicionamiento aleatorio de barcos sin colisiones ni errores de out of bounds
+#2. tablero bonito con tabulate o un módulo equivalente
+#3. colores
+#4. uso de caracteres ASCII/unicode 
+#5. niveles de dificultad(inteligencia)
+#6. revelar casillas circundantes tras disparo exitoso
+#7. no hay excepciones en los inputs
 
 
 
